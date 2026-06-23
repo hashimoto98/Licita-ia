@@ -1,0 +1,10 @@
+# Diretório de uploads — impede execução de qualquer script
+# Permite apenas download dos arquivos pelos controllers PHP autorizados.
+Options -Indexes -ExecCGI
+
+<FilesMatch "\.ph(p[3-8]?|t|tml|ar)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+AddType application/octet-stream .pdf .doc .docx .txt

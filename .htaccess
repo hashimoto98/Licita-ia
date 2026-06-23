@@ -1,0 +1,20 @@
+# LicitAI — Apache (.htaccess para hospedagem compartilhada)
+
+# ─── Bloqueia listagem de diretórios ──────────────────────────────────────────
+Options -Indexes
+
+# ─── Proteção de arquivos sensíveis ───────────────────────────────────────────
+<FilesMatch "\.(env|sql|log|bak|sh|lock|gitignore)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# ─── Bloqueia acesso direto a diretórios do sistema ───────────────────────────
+RewriteEngine On
+RewriteRule ^(config|models|controllers|views|logs|storage)(/|$) - [F,L]
+
+# ─── Protege install.php após instalação ──────────────────────────────────────
+<Files "install.php">
+    Order allow,deny
+    Deny from all
+</Files>

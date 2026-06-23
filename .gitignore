@@ -1,0 +1,33 @@
+# Ambiente
+.env
+*.env
+.env.local
+
+# Banco SQLite local
+storage/*.sqlite
+storage/*.sqlite-wal
+storage/*.sqlite-shm
+
+# Logs
+logs/*.log
+logs/*.txt
+
+# Temporários / cache de sistema
+*.bak
+*.tmp
+/vendor/
+node_modules/
+
+# Editores e ferramentas de desenvolvimento
+.idea/
+.vscode/
+.claude/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Nunca commitar o install.php com credenciais expostas
+# install.php
