@@ -26,7 +26,7 @@
 O LicitAI resolve um problema crítico de empresas de tecnologia: **identificar, dentro de centenas de editais publicados diariamente, exatamente quais têm maior probabilidade de vitória** com base no portfólio de softwares da empresa.
 
 ## Link para teste
-licita-ia.free.df
+licita-ia.free.nf
 
 ### Fluxo em 4 etapas
 
